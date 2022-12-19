@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header">22sp</dimen>
+    <dimen name="itemHead">18sp</dimen>
+    <dimen name="category">16sp</dimen>
+    <dimen name="values">15sp</dimen>
+</resources>
