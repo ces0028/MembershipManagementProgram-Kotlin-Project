@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSchoolName"
+        style="@style/schoolName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:padding="30dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryId"
+                style="@style/category"
+                android:text="@string/id" />
+
+            <EditText
+                android:id="@+id/edtModifyId"
+                style="@style/values"
+                android:inputType="text"
+                android:hint="@string/hintId" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnModifySearchId"
+            style="@style/btnSearchId"
+            android:backgroundTint="@color/main"
+            android:text="@string/btnSearchId" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryPassword"
+                style="@style/category"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/edtModifyPassword"
+                style="@style/values"
+                android:inputType="textPassword"
+                android:hint="@string/hintPassword" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryName"
+                style="@style/category"
+                android:text="@string/name" />
+
+            <EditText
+                android:id="@+id/edtModifyName"
+                style="@style/values"
+                android:inputType="textPersonName"
+                android:hint="@string/hintName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryPosition"
+                style="@style/category"
+                android:text="@string/position" />
+
+            <TextView
+                android:id="@+id/tvModifyPosition"
+                style="@style/values"
+                android:hint="@string/hintClick" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryDepartment"
+                style="@style/category"
+                android:text="@string/department" />
+
+            <TextView
+                android:id="@+id/tvModifyDepartment"
+                style="@style/values"
+                android:hint="@string/hintClick" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryPhone"
+                style="@style/category"
+                android:text="@string/phone" />
+
+            <EditText
+                android:id="@+id/edtModifyPhone"
+                style="@style/values"
+                android:inputType="phone"
+                android:hint="@string/hintPhone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryEmail"
+                style="@style/category"
+                android:text="@string/email" />
+
+            <EditText
+                android:id="@+id/edtModifyEmail"
+                style="@style/values"
+                android:inputType="textEmailAddress"
+                android:hint="@string/hintEmail" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvModifyCategoryAddress"
+                style="@style/category"
+                android:text="@string/address" />
+
+            <EditText
+                android:id="@+id/edtModifyAddress"
+                style="@style/values"
+                android:inputType="textPostalAddress"
+                android:hint="@string/hintAddress" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnModifyReturn"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnReturn" />
+
+        <Button
+            android:id="@+id/btnModifyModify"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnModify" />
+    </LinearLayout>
+
+</LinearLayout>
