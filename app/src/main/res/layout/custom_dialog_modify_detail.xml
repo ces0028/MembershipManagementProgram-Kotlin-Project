@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryId"
+                    style="@style/category"
+                    android:text="@string/id" />
+
+                <TextView
+                    android:id="@+id/tvDialogModifyId"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryPassword"
+                    style="@style/category"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:id="@+id/edtDialogModifyPassword"
+                    style="@style/values"
+                    android:hint="@string/hintPassword"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryName"
+                    style="@style/category"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/edtDialogModifyName"
+                    style="@style/values"
+                    android:hint="@string/hintName"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryPosition"
+                    style="@style/category"
+                    android:text="@string/position" />
+
+                <TextView
+                    android:id="@+id/tvDialogModifyPosition"
+                    style="@style/clickValues"
+                    android:hint="@string/hintClick" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryDepartment"
+                    style="@style/category"
+                    android:text="@string/department" />
+
+                <TextView
+                    android:id="@+id/tvDialogModifyDepartment"
+                    style="@style/clickValues"
+                    android:hint="@string/hintClick" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryPhone"
+                    style="@style/category"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/edtDialogModifyPhone"
+                    style="@style/values"
+                    android:hint="@string/hintPhone"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryEmail"
+                    style="@style/category"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/edtDialogModifyEmail"
+                    style="@style/values"
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/innerLinearLayoutType2">
+
+                <TextView
+                    android:id="@+id/tvDialogModifyCategoryAddress"
+                    style="@style/category"
+                    android:text="@string/address" />
+
+                <EditText
+                    android:id="@+id/edtDialogModifyAddress"
+                    style="@style/values"
+                    android:hint="@string/hintAddress"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogModifyClose"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnClose" />
+
+        <Button
+            android:id="@+id/btnDialogModifySave"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnSave" />
+    </LinearLayout>
+
+</LinearLayout>
