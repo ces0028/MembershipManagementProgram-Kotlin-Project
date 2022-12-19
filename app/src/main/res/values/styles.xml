@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="schoolName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">0.7</item>
+        <item name="android:fontFamily">@font/ef_rebecca</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:text">@string/app_name</item>
+        <item name="android:textColor">@color/sub</item>
+        <item name="android:textSize">@dimen/header</item>
+    </style>
+    <style name="btnSub">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:onClick">viewOnClick</item>
+    </style>
+    <style name="btnMain" parent="btnSub">
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="btnSearchId" parent="btnMain">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+    </style>
+    <style name="registerCategory">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/category</item>
+    </style>
+    <style name="registerValues">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:ems">20</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/values</item>
+    </style>
+    <style name="clickRegisterValues" parent="registerValues">
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+    <style name="category" parent="registerCategory">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_weight">0.3</item>
+    </style>
+    <style name="values" parent="registerValues">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    <style name="clickValues" parent="values">
+        <item name="android:layout_marginStart">15dp</item>
+    </style>
+    <style name="innerLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">5dp</item>
+    </style>
+    <style name="innerLinearLayoutType2" parent="innerLinearLayout">
+        <item name="android:padding">0dp</item>
+    </style>
+    <style name="itemHead">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/itemHead</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="itemBody" parent="itemHead">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/values</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+</resources>
