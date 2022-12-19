@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryId"
+                    style="@style/registerCategory"
+                    android:text="@string/id"/>
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterId"
+                    style="@style/registerValues"
+                    android:hint="@string/hintId"
+                    android:inputType="text"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryPassword"
+                    style="@style/registerCategory"
+                    android:text="@string/password" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterPassword"
+                    style="@style/registerValues"
+                    android:hint="@string/hintPassword"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryPasswordCheck"
+                    style="@style/registerCategory"
+                    android:text="@string/passwordCheck" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterPasswordCheck"
+                    style="@style/registerValues"
+                    android:hint="@string/hintPasswordCheck"
+                    android:inputType="textPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryName"
+                    style="@style/registerCategory"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterName"
+                    style="@style/registerValues"
+                    android:hint="@string/hintName" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryPosition"
+                    style="@style/registerCategory"
+                    android:text="@string/position" />
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterPosition"
+                    style="@style/clickRegisterValues"
+                    android:hint="@string/hintClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryDepartment"
+                    style="@style/registerCategory"
+                    android:text="@string/department" />
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterDepartment"
+                    style="@style/clickRegisterValues"
+                    android:hint="@string/hintClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryPhone"
+                    style="@style/registerCategory"
+                    android:text="@string/phone" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterPhone"
+                    style="@style/registerValues"
+                    android:hint="@string/hintPhone"
+                    android:inputType="phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryEmail"
+                    style="@style/registerCategory"
+                    android:text="@string/email" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterEmail"
+                    style="@style/registerValues"
+                    android:hint="@string/hintEmail"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvDialogRegisterCategoryAddress"
+                    style="@style/registerCategory"
+                    android:text="@string/address" />
+
+                <EditText
+                    android:id="@+id/edtDialogRegisterAddress"
+                    style="@style/registerValues"
+                    android:hint="@string/hintAddress"
+                    android:inputType="textPostalAddress" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDialogRegisterClose"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnClose" />
+
+        <Button
+            android:id="@+id/btnDialogRegisterJoin"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnRegister" />
+    </LinearLayout>
+
+</LinearLayout>
