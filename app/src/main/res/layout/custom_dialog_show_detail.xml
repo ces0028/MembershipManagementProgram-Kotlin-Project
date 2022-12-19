@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryId"
+                    style="@style/category"
+                    android:text="@string/id" />
+
+                <TextView
+                    android:id="@+id/tvShowId"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryPassword"
+                    style="@style/category"
+                    android:text="@string/password" />
+
+                <TextView
+                    android:id="@+id/tvShowPassword"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryName"
+                    style="@style/category"
+                    android:text="@string/name" />
+
+                <TextView
+                    android:id="@+id/tvShowName"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryPosition"
+                    style="@style/category"
+                    android:text="@string/position"/>
+
+                <TextView
+                    android:id="@+id/tvShowPosition"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryDepartment"
+                    style="@style/category"
+                    android:text="@string/department" />
+
+                <TextView
+                    android:id="@+id/tvShowDepartment"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryPhone"
+                    style="@style/category"
+                    android:text="@string/phone" />
+
+                <TextView
+                    android:id="@+id/tvShowPhone"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryEmail"
+                    style="@style/category"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/tvShowEmail"
+                    style="@style/values" />
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/innerLinearLayout"
+                android:background="@drawable/item_border_line">
+
+                <TextView
+                    android:id="@+id/tvCategoryAddress"
+                    style="@style/category"
+                    android:text="@string/address" />
+
+                <TextView
+                    android:id="@+id/tvShowAddress"
+                    style="@style/values" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnShowClose"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnClose" />
+
+        <Button
+            android:id="@+id/btnShowModify"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnModify"/>
+    </LinearLayout>
+
+</LinearLayout>
