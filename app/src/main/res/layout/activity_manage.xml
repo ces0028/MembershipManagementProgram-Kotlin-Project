@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tvSchoolName"
+        style="@style/schoolName" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:padding="30dp"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/img_main" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnManageAdd"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnAdd" />
+
+        <Button
+            android:id="@+id/btnManageList"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnList" />
+
+        <Button
+            android:id="@+id/btnManageDelete"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnDelete" />
+
+        <Button
+            android:id="@+id/btnManageModify"
+            style="@style/btnMain"
+            android:background="@color/main"
+            android:text="@string/btnModify" />
+
+        <Button
+            android:id="@+id/btnManageReturn"
+            style="@style/btnSub"
+            android:background="@color/sub"
+            android:text="@string/btnReturn"/>
+    </LinearLayout>
+
+</LinearLayout>
